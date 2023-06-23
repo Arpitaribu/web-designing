@@ -1,11 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url('https://example.com/space-photo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-color: #112233; /* Add an attractive color as the fallback */
+}
+
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+  background-color: #334455;
+  color: #ffffff;
+}
+
+.menu a {
+  background-color: #557799;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  background-color: #ffffff;
+  color: #112233;
+}
+
+.right {
+  background-color: #334455;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
 </head>
-<body>
-    
-</body>
-</html>
+<body style="font-family: Verdana; color: #151d4b;">
+    <div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+        <h1>Science Website</h1>
+      </div>
+      
+      <div style="overflow:auto">
+        <div class="menu">
+          <a href="#">Physics</a>
+          <a href="#">Chemistry</a>
+          <a href="#">Biology</a>
+          <a href="#">Astronomy</a>
+        </div>
+      
+        <div class="main">
+          <h2>Physics</h2>
+          <p>Welcome to the Physics section of our science website. Here, you will find interesting articles and resources related to the fascinating field of physics.</p>
+          <p>Some sample topics you can explore:</p>
+          <ul>
+            <li>Quantum Mechanics</li>
+            <li>General Relativity</li>
+            <li>Particle Physics</li>
+            <li>Thermodynamics</li>
+          </ul>
+        </div>
+      
+        <div class="right">
+          <h2>About</h2>
+          <p>Our science website is dedicated to providing educational content and resources to help you explore various scientific disciplines. Whether you're a student, researcher, or science enthusiast, we have something for everyone.</p>
+        </div>
+      </div>
+      
+      <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">&copy; 2023 Science Website</div>
+      
+      </body>
+      </html>
